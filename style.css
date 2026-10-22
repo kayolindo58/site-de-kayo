@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo: #0a0b14;
+    --cardFundo: #0f111d;
+    --borda: #1e2133;
+    --destaque: #4f52f4;
+    --texto: #ffffff;
+    --textoPequeno: #a5a9c4;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body p {
+    color: var(--textoPequeno);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.cor1 {
+    color: var(--texto);
+}
+
+.destaque {
+    color: var(--destaque);
+}
+
+/* ---------- header ---------- */
+header.container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background: var(--fundo);
+    border-bottom: 1px solid var(--borda);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.incio123 {
+    display: flex;
+    gap: 32px;
+}
+
+.inicio1 {
+    color: var(--textoPequeno);
+    padding-bottom: 6px;
+}
+
+.inicio--ativo {
+    color: var(--destaque);
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--destaque);
+}
+
+.luz button {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid var(--borda);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.github {
+    border: 1px solid var(--destaque);
+    border-radius: 999px;
+    padding: 10px 18px;
+    background: transparent;
+}
+
+.github li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.github:hover {
+    background: rgba(79, 82, 245, 0.15);
+}
+
+.githublogo1 {
+    height: 20px;
+    width: auto;
+}
+
+/* ---------- section ---------- */
+.conteudo1,
+.conteudo2,
+.conteudo3 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+.conteudo1 h1 {
+    font-size: 3rem;
+}
+
+.paragrafo1 {
+    margin: 16px 0;
+}
+
+.botaoSec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 24px 0;
+}
+
+.botaoSec button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.botaoSec img {
+    height: 22px;
+    width: auto;
+}
+
+.botaoSec a {
+    color: var(--textoPequeno);
+}
+
+.botaoSec a:hover {
+    color: var(--destaque);
+}
+
+.botaoPrinc button,
+.conteudo3 button {
+    background: var(--destaque);
+    border: none;
+    border-radius: 999px;
+    padding: 12px 28px;
+    cursor: pointer;
+}
+
+.botaoPrinc a,
+.conteudo3 a {
+    color: var(--texto);
+}
+
+/* ---------- card ---------- */
+.cards {
+    display: grid;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.cardBranco,
+.cardRoxo {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    column-gap: 16px;
+    align-items: start;
+    padding: 20px;
+    background: var(--cardFundo);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+}
+
+.cardRoxo {
+    border-color: var(--destaque);
+}
+
+.icone {
+    grid-row: 1 / span 2;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: rgba(79, 82, 245, 0.12);
+}
+
+/* ---------- rodape ---------- */
+.footer {
+    text-align: center;
+    padding: 24px;
+    border-top: 1px solid var(--borda);
+}
