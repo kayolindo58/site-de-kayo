@@ -41,6 +41,15 @@ ul {
     color: var(--destaque);
 }
 
+.linha {
+    border: none;
+    height: 1px;
+    background-color: var(--borda);
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 2px;
+}
+
 /* ---------- header ---------- */
 header.container {
     position: sticky;
@@ -116,9 +125,16 @@ header nav {
     background: rgba(79, 82, 245, 0.15);
 }
 
+.github a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .githublogo1 {
     height: 20px;
     width: auto;
+    display: block;
 }
 
 /* ---------- section ---------- */
@@ -155,12 +171,30 @@ header nav {
 }
 
 .botaoSec img {
+    width: 22px;
     height: 22px;
-    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .botaoSec a {
-    color: var(--textoPequeno);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--texto);
+}
+
+.botaoSec button:nth-child(1) img,
+.botaoSec button:nth-child(4) img {
+    transform: scale(1.8);
+}
+
+.botaoSec button:nth-child(2) img {
+    transform: scale(0.9);
+}
+
+.botaoSec button:nth-child(3) img {
+    transform: scale(1.5);
 }
 
 .botaoSec a:hover {
@@ -181,6 +215,12 @@ header nav {
     color: var(--texto);
 }
 
+.img1 {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(85%) saturate(3015%) hue-rotate(228deg) brightness(97%) contrast(97%);
+}
+
+
+
 /* ---------- card ---------- */
 .cards {
     display: grid;
@@ -188,8 +228,9 @@ header nav {
     margin-top: 32px;
 }
 
-.cardBranco,
-.cardRoxo {
+
+.cardRoxo,
+.cardBranco {
     display: grid;
     grid-template-columns: 48px 1fr;
     column-gap: 16px;
@@ -200,7 +241,8 @@ header nav {
     border-radius: 14px;
 }
 
-.cardRoxo {
+.cardRoxo,
+.cardBranco {
     border-color: var(--destaque);
 }
 
@@ -219,4 +261,65 @@ header nav {
     text-align: center;
     padding: 24px;
     border-top: 1px solid var(--borda);
+}
+
+/* ---------- commit, background ---------- */
+
+.conteudo1 {
+    position: relative;
+    isolation: isolate;
+}
+
+.conteudo1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    z-index: -1;
+    background:
+        linear-gradient(to right, var(--fundo) 0%, transparent 70%),
+        linear-gradient(to top, var(--fundo) 0%, transparent 30%),
+        url("assets/background.webp") center right / cover no-repeat;
+
+    mix-blend-mode: screen;
+}
+
+/* ---------- commit, responsivo ---------- */
+
+@media (max-width: 768px) {
+
+    header nav {
+        gap: 12px;
+    }
+
+    .incio123 {
+        gap: 12px;
+    }
+
+    .github {
+        padding: 8px 12px;
+    }
+
+    .conteudo1,
+    .conteudo2,
+    .conteudo3 {
+        padding: 40px 16px;
+    }
+
+    .cardRoxo,
+    .cardBranco {
+        grid-template-columns: 1fr;
+    }
+
+    .icone {
+        grid-row: auto;
+        margin-bottom: 12px;
+    }
+
+    .conteudo1::before {
+        width: 100%;
+        opacity: 0.25;
+    }
 }
