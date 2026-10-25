@@ -284,6 +284,7 @@ header nav {
         url("assets/background.webp") center right / cover no-repeat;
 
     mix-blend-mode: screen;
+    opacity: 0.5;
 }
 
 /* ---------- commit, responsivo ---------- */
