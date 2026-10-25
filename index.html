@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site de kayo</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +23,7 @@
         </div>
         <nav>
             <ul class="incio123">
-                <li><a href="#inicio" class="inicio--ativo">Inicio</a></li>
+                <li><a href="#inicio" class="inicio1">Inicio</a></li>
                 <li><a href="#sobre" class="inicio1">Sobre</a></li>
                 <li><a href="#contato" class="inicio1">Contato</a></li>
             </ul>
@@ -25,13 +31,13 @@
                 <button><a href=""></a></button>
             </div>
             <ul class="github">
-                <li><img src="assets/git hub.png" class="githublogo1"><a href="https://github.com/kayolindo58">GitHub</a></li>
-
+                <li><a href="https://github.com/kayolindo58"><img src="assets/git hub.png"
+                            class="githublogo1">GitHub</a></li>
             </ul>
         </nav>
     </header>
     <!-- Conteúdo principal do site -->
-    <section class="conteudo1">
+    <section class="conteudo1" id="inicio">
         <div class="cor1">
             <h3><span class="destaque">Olá, eu sou</span></h3>
             <h1>Kayo Julian</h1>
@@ -43,13 +49,14 @@
             <p class="destaque">PHP, SQL, HTML, CSS e JavaScript</p>
         </div>
         <div class="botaoSec">
-            <button><img src="assets/git hub.png" alt=""><a href="https://github.com/kayolindo58">GitHub</a></button>
-            <button><img src="assets/link edin.png" alt=""><a
-                    href="https://www.linkedin.com/in/kayo-alves-mendes-690134424/?isSelfProfile=true">LinkedIn</a></button>
-            <button><img src="assets/insta gram.png" alt=""><a
-                    href="https://www.instagram.com/kay0kkk?xtok=ajR3N24xazlhNnN1">Instagram</a></button>
-            <button><img src="assets/dis cord.png" alt=""><a
-                    href="https://discord.com/users/1560495333966872588">discord</a></button>
+            <button><a href="https://github.com/kayolindo58"><img src="assets/git hub.png" alt=""
+                        class="img1">GitHub</a></button>
+            <button><a href="https://www.linkedin.com/in/kayo-alves-mendes-690134424/?isSelfProfile=true"><img
+                        src="assets/link edin.png" alt="" class="img1">LinkedIn</a></button>
+            <button><a href="https://www.instagram.com/kay0kkk?xtok=ajR3N24xazlhNnN1"><img src="assets/insta gram.png"
+                        alt="" class="img1">Instagram</a></button>
+            <button><a href="https://discord.com/users/1560495333966872588"><img src="assets/dis cord.png" alt=""
+                        class="img1">discord</a></button>
         </div>
 
         <div class="botaoPrinc">
@@ -58,7 +65,9 @@
     </section>
 
     <!-- sobre mim -->
-    <section class="conteudo2">
+
+    <hr class="linha">
+    <section class="conteudo2" id="sobre">
         <div class="cor1">
             <h3><span class="destaque">SOBRE MIM</span></h3>
             <h2>Quem eu <span class="destaque">sou?</span></h2>
@@ -67,7 +76,7 @@
             e SQL.</p>
         <div class="cards">
             <div class="cardBranco">
-                <img src="" class="icone">
+                <img src="assets/codigo.webp" class="icone">
                 <h3>Sistemas e sites</h3>
                 <p>Front-end: a aparência do site como você conhece e usa (e-commerce ou institucional)</br> E o
                     back-end: o
@@ -103,8 +112,8 @@
         </div>
     </section>
     <!--contato-->
-
-    <section class="conteudo3">
+    <hr class="linha">
+    <section class="conteudo3" id="contato">
         <div class="cor1">
             <h2>Entre em<span class="destaque"> Contato</span></h2>
         </div>
@@ -116,6 +125,10 @@
             <p>desenvolvido por Kayo Julian • 2026</p>
         </footer>
     </section>
+
+    <script>
+
+    </script>
 
 </body>
 
