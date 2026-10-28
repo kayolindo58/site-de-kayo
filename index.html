@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
+        }
+
+        section[id] {
+            scroll-margin-top: 70px;
         }
     </style>
 </head>
@@ -23,9 +27,9 @@
         </div>
         <nav>
             <ul class="incio123">
-                <li><a href="#inicio" class="inicio1">Inicio</a></li>
+                <li><a href="#inicio" class="inicio--ativo">Inicio</a></li>
                 <li><a href="#sobre" class="inicio1">Sobre</a></li>
-                <li><a href="#contato" class="inicio1">Contato</a></li>
+                <li><a href="#contato" class="inicio2">Contato</a></li>
             </ul>
             <div class="luz">
                 <button><a href=""></a></button>
@@ -126,10 +130,10 @@
         </footer>
     </section>
 
+    <script src="arquivo.js"></script>
     <script>
-
+        [document.querySelectorAll('*')].filter(e => e.getBoundingClientRect().right > innerWidth)
     </script>
-
 </body>
 
 </html>
